@@ -6,15 +6,11 @@ html body div div div.indigo {
   height: 40%;
 }
 
-html body div div div.grey {
-  height: 60%;
-}
-
 html body div div div.background {
   height: 100%;
   width: 100%;
   z-index: -10;
-  position: fixed;
+  position: absolute;;
   top: 0;
   left: 0;
 }

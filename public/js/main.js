@@ -26186,9 +26186,8 @@ var Base = React.createClass({
       ),
       React.createElement(
         'div',
-        { className: 'background' },
-        React.createElement('div', { className: 'indigo' }),
-        React.createElement('div', { className: 'grey lighten-3' })
+        { className: 'background z-depth-2' },
+        React.createElement('div', { className: 'indigo' })
       )
     );
   }

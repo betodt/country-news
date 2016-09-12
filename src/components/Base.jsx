@@ -13,9 +13,8 @@ var Base = React.createClass({
           />
           {this.props.children}
         </div>
-        <div className="background">
+        <div className="background z-depth-2">
           <div className="indigo"></div>
-          <div className="grey lighten-3"></div>
         </div>
       </div>
     );
