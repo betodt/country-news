@@ -1,4 +1,5 @@
 var React = require('react');
+var ThumbPhoto = require('./ThumbPhoto.jsx');
 
 var Photos = React.createClass({
   render() {
@@ -7,30 +8,30 @@ var Photos = React.createClass({
         <div className="card card-panel large">
           <div className="row">
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
+              <ThumbPhoto src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
             </div>
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
+              <ThumbPhoto src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
             </div>
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
+              <ThumbPhoto src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
             </div>
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
+              <ThumbPhoto src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
             </div>
           </div>
           <div className="row">
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
+              <ThumbPhoto src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
             </div>
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
+              <ThumbPhoto src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
             </div>
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
+              <ThumbPhoto src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
             </div>
             <div className="col s3">
-              <img className="responsive-img materialboxed z-depth-2" src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
+              <ThumbPhoto src="http://www.freedigitalphotos.net/images/img/homepage/87357.jpg"/>
             </div>
           </div>
         </div>

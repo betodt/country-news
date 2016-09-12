@@ -26335,49 +26335,62 @@ module.exports = Nav;
 
 },{"react":232}],238:[function(require,module,exports){
 var React = require('react');
+var ThumbPhoto = require('./ThumbPhoto.jsx');
 
 var News = React.createClass({
-  displayName: "News",
+  displayName: 'News',
 
   render() {
     return React.createElement(
-      "div",
+      'div',
       null,
       React.createElement(
-        "div",
-        { className: "news card card-panel large" },
+        'div',
+        { className: 'news card card-panel large' },
         React.createElement(
-          "div",
-          { className: "row" },
+          'div',
+          { className: 'row' },
           React.createElement(
-            "div",
-            { className: "col s3 m2" },
-            React.createElement("img", { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Beats_Electronics_logo.svg/2000px-Beats_Electronics_logo.svg.png", className: "responsive-img" })
+            'div',
+            { className: 'col s3 m2' },
+            React.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Beats_Electronics_logo.svg/2000px-Beats_Electronics_logo.svg.png', className: 'responsive-img' })
           ),
           React.createElement(
-            "div",
-            { className: "col s9 m10" },
+            'div',
+            { className: 'col s9 m10' },
             React.createElement(
-              "h4",
+              'h4',
               null,
-              "Obesity in America"
+              'Obesity in America'
             ),
             React.createElement(
-              "h5",
+              'h5',
               null,
-              "Why are Americans so fat?"
+              'Why are Americans so fat?'
             ),
             React.createElement(
-              "p",
+              'p',
               null,
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non orci auctor, pulvinar magna et, tincidunt elit. Nullam et mattis eros. Nullam at sem id tellus viverra finibus. Cras at erat in risus mollis commodo quis eu risus. Sed vitae enim commodo, sollicitudin quam ut, viverra urna. Morbi dapibus facilisis nulla, nec imperdiet sapien posuere quis. Nulla facilisi."
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non orci auctor, pulvinar magna et, tincidunt elit. Nullam et mattis eros. Nullam at sem id tellus viverra finibus. Cras at erat in risus mollis commodo quis eu risus. Sed vitae enim commodo, sollicitudin quam ut, viverra urna. Morbi dapibus facilisis nulla, nec imperdiet sapien posuere quis. Nulla facilisi.'
             ),
-            React.createElement("img", { className: "materialboxed z-depth-2", src: "http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif" }),
-            React.createElement("img", { className: "materialboxed z-depth-2", src: "http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif" }),
             React.createElement(
-              "h6",
+              'div',
+              { className: 'row' },
+              React.createElement(
+                'div',
+                { className: 'col s6' },
+                React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
+              ),
+              React.createElement(
+                'div',
+                { className: 'col s6' },
+                React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
+              )
+            ),
+            React.createElement(
+              'h6',
               null,
-              "Kentucky, USA"
+              'Kentucky, USA'
             )
           )
         )
@@ -26388,65 +26401,66 @@ var News = React.createClass({
 
 module.exports = News;
 
-},{"react":232}],239:[function(require,module,exports){
+},{"./ThumbPhoto.jsx":240,"react":232}],239:[function(require,module,exports){
 var React = require('react');
+var ThumbPhoto = require('./ThumbPhoto.jsx');
 
 var Photos = React.createClass({
-  displayName: "Photos",
+  displayName: 'Photos',
 
   render() {
     return React.createElement(
-      "div",
+      'div',
       null,
       React.createElement(
-        "div",
-        { className: "card card-panel large" },
+        'div',
+        { className: 'card card-panel large' },
         React.createElement(
-          "div",
-          { className: "row" },
+          'div',
+          { className: 'row' },
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.freedigitalphotos.net/images/img/homepage/87357.jpg" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.freedigitalphotos.net/images/img/homepage/87357.jpg' })
           ),
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
           ),
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
           ),
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.freedigitalphotos.net/images/img/homepage/87357.jpg" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.freedigitalphotos.net/images/img/homepage/87357.jpg' })
           )
         ),
         React.createElement(
-          "div",
-          { className: "row" },
+          'div',
+          { className: 'row' },
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.freedigitalphotos.net/images/img/homepage/87357.jpg" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.freedigitalphotos.net/images/img/homepage/87357.jpg' })
           ),
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
           ),
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
           ),
           React.createElement(
-            "div",
-            { className: "col s3" },
-            React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: "http://www.freedigitalphotos.net/images/img/homepage/87357.jpg" })
+            'div',
+            { className: 'col s3' },
+            React.createElement(ThumbPhoto, { src: 'http://www.freedigitalphotos.net/images/img/homepage/87357.jpg' })
           )
         )
       )
@@ -26456,11 +26470,32 @@ var Photos = React.createClass({
 
 module.exports = Photos;
 
-},{"react":232}],240:[function(require,module,exports){
+},{"./ThumbPhoto.jsx":240,"react":232}],240:[function(require,module,exports){
+var React = require('react');
+
+var ThumbPhoto = React.createClass({
+  displayName: "ThumbPhoto",
+
+  render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "div",
+        null,
+        React.createElement("img", { className: "responsive-img materialboxed z-depth-2", src: this.props.src })
+      )
+    );
+  }
+});
+
+module.exports = ThumbPhoto;
+
+},{"react":232}],241:[function(require,module,exports){
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Routes = require('./Routes.jsx');
 
 ReactDOM.render(Routes, document.getElementById('main'));
 
-},{"./Routes.jsx":235,"react":232,"react-dom":51}]},{},[240]);
+},{"./Routes.jsx":235,"react":232,"react-dom":51}]},{},[241]);

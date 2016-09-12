@@ -1,4 +1,5 @@
 var React = require('react');
+var ThumbPhoto = require('./ThumbPhoto.jsx');
 
 var News = React.createClass({
   render() {
@@ -14,8 +15,14 @@ var News = React.createClass({
               <h5>Why are Americans so fat?</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non orci auctor, pulvinar magna et, tincidunt elit. Nullam et mattis eros. Nullam at sem id tellus viverra finibus. Cras at erat in risus mollis commodo quis eu risus. Sed vitae enim commodo, sollicitudin quam ut, viverra urna. Morbi dapibus facilisis nulla, nec imperdiet sapien posuere quis. Nulla facilisi.</p>
 
-              <img className="materialboxed z-depth-2" src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
-              <img className="materialboxed z-depth-2" src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
+              <div className="row">
+                <div className="col s6">
+                  <ThumbPhoto src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
+                </div>
+                <div className="col s6">
+                  <ThumbPhoto src="http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif"/>
+                </div>
+              </div>
               <h6>Kentucky, USA</h6>
             </div>
           </div>
