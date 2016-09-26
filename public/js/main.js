@@ -26163,7 +26163,7 @@ var Routes = React.createElement(
 
 module.exports = Routes;
 
-},{"./components/Base.jsx":236,"./components/News.jsx":238,"./components/Photos.jsx":239,"history/lib/createHashHistory":37,"react":232,"react-router":81}],236:[function(require,module,exports){
+},{"./components/Base.jsx":236,"./components/News.jsx":238,"./components/Photos.jsx":240,"history/lib/createHashHistory":37,"react":232,"react-router":81}],236:[function(require,module,exports){
 var React = require('react');
 
 var Nav = require('./Nav.jsx');
@@ -26334,7 +26334,7 @@ module.exports = Nav;
 
 },{"react":232}],238:[function(require,module,exports){
 var React = require('react');
-var ThumbPhoto = require('./ThumbPhoto.jsx');
+var NewsStory = require('./NewsStory.jsx');
 
 var News = React.createClass({
   displayName: 'News',
@@ -26343,54 +26343,68 @@ var News = React.createClass({
     return React.createElement(
       'div',
       null,
+      React.createElement(NewsStory, null)
+    );
+  }
+});
+
+module.exports = News;
+
+},{"./NewsStory.jsx":239,"react":232}],239:[function(require,module,exports){
+var React = require('react');
+var ThumbPhoto = require('./ThumbPhoto.jsx');
+
+var NewsStory = React.createClass({
+  displayName: 'NewsStory',
+
+  render() {
+    return React.createElement(
+      'div',
+      { className: 'news card card-panel large' },
       React.createElement(
         'div',
-        { className: 'news card card-panel large' },
+        { className: 'row' },
         React.createElement(
           'div',
-          { className: 'row' },
+          { className: 'col s3 m2' },
+          React.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Beats_Electronics_logo.svg/2000px-Beats_Electronics_logo.svg.png', className: 'responsive-img' })
+        ),
+        React.createElement(
+          'div',
+          { className: 'col s9 m10' },
           React.createElement(
-            'div',
-            { className: 'col s3 m2' },
-            React.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Beats_Electronics_logo.svg/2000px-Beats_Electronics_logo.svg.png', className: 'responsive-img' })
+            'h4',
+            null,
+            'Obesity in America'
+          ),
+          React.createElement(
+            'h5',
+            null,
+            'Why are Americans so fat?'
+          ),
+          React.createElement(
+            'p',
+            null,
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non orci auctor, pulvinar magna et, tincidunt elit. Nullam et mattis eros. Nullam at sem id tellus viverra finibus. Cras at erat in risus mollis commodo quis eu risus. Sed vitae enim commodo, sollicitudin quam ut, viverra urna. Morbi dapibus facilisis nulla, nec imperdiet sapien posuere quis. Nulla facilisi.'
           ),
           React.createElement(
             'div',
-            { className: 'col s9 m10' },
+            { className: 'row' },
             React.createElement(
-              'h4',
-              null,
-              'Obesity in America'
-            ),
-            React.createElement(
-              'h5',
-              null,
-              'Why are Americans so fat?'
-            ),
-            React.createElement(
-              'p',
-              null,
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non orci auctor, pulvinar magna et, tincidunt elit. Nullam et mattis eros. Nullam at sem id tellus viverra finibus. Cras at erat in risus mollis commodo quis eu risus. Sed vitae enim commodo, sollicitudin quam ut, viverra urna. Morbi dapibus facilisis nulla, nec imperdiet sapien posuere quis. Nulla facilisi.'
+              'div',
+              { className: 'col s6' },
+              React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
             ),
             React.createElement(
               'div',
-              { className: 'row' },
-              React.createElement(
-                'div',
-                { className: 'col s6' },
-                React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
-              ),
-              React.createElement(
-                'div',
-                { className: 'col s6' },
-                React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
-              )
-            ),
-            React.createElement(
-              'h6',
-              null,
-              'Kentucky, USA'
+              { className: 'col s6' },
+              React.createElement(ThumbPhoto, { src: 'http://www.marshotel.com/photos/obesity-statistics-in-american-children-39.gif' })
             )
+          ),
+          React.createElement(
+            'h6',
+            null,
+            'Kentucky, USA'
           )
         )
       )
@@ -26398,9 +26412,9 @@ var News = React.createClass({
   }
 });
 
-module.exports = News;
+module.exports = NewsStory;
 
-},{"./ThumbPhoto.jsx":240,"react":232}],239:[function(require,module,exports){
+},{"./ThumbPhoto.jsx":241,"react":232}],240:[function(require,module,exports){
 var React = require('react');
 var ThumbPhoto = require('./ThumbPhoto.jsx');
 
@@ -26469,7 +26483,7 @@ var Photos = React.createClass({
 
 module.exports = Photos;
 
-},{"./ThumbPhoto.jsx":240,"react":232}],240:[function(require,module,exports){
+},{"./ThumbPhoto.jsx":241,"react":232}],241:[function(require,module,exports){
 var React = require('react');
 
 var ThumbPhoto = React.createClass({
@@ -26490,11 +26504,11 @@ var ThumbPhoto = React.createClass({
 
 module.exports = ThumbPhoto;
 
-},{"react":232}],241:[function(require,module,exports){
+},{"react":232}],242:[function(require,module,exports){
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Routes = require('./Routes.jsx');
 
 ReactDOM.render(Routes, document.getElementById('main'));
 
-},{"./Routes.jsx":235,"react":232,"react-dom":51}]},{},[241]);
+},{"./Routes.jsx":235,"react":232,"react-dom":51}]},{},[242]);
